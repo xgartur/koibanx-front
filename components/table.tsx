@@ -8,6 +8,7 @@ interface storeProp {
 }
 type OrderCommerce = boolean | 'asc' | 'desc'
 const Table = (props: storeProp) => {
+  // @ts-ignore
   const { state, setOrderCommerce, setOrderCuit, setPage } = useContext(AppContext)
   const orderStores = () => {
     let values: OrderCommerce[] = []

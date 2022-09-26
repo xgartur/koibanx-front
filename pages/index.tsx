@@ -18,6 +18,7 @@ const Home: NextPage = () => {
 
   const [filter, setFilter] = useState("");
   const [active, setActive] = useState("not");
+  // @ts-ignore
   const { state, setStore, setParams, cleanParams, setPage } = useContext(AppContext)
   const buildParams = () => {
     cleanParams()
